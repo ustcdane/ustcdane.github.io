@@ -1,70 +1,350 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<!-- BY Daniel -->
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+<head>
+		<meta charset=utf8"/>
+		<!---  This is imporant,don't forget, otherwise IE will wrong-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>Wang Dan @ sogou</title>
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+		<meta name="keywords" content="Daniel, nginx, linux, net, c,mysql" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="">
+        <meta name="author" content="Dan Wang"/>
+		<link rel="shortcut icon" href="images/my.ico"/>
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Daniel技术博客-GitHub.io by ustcdane</title>
-  </head>
+        <!-- Le styles -->
+        <link href="mycss/bootstrap.css" rel="stylesheet">
+        <link href="mycss/base.css" rel="stylesheet">
+				<link href="mycss/docs.css" rel="stylesheet">
+				<link href="mycss/pygments-manni.css" rel="stylesheet">
+    <style type="text/css" id="holderjs-style">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style></head>
+		<body>
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/ustcdane">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Daniel技术博客-GitHub.io</h1>
-            <h2>DanielWang的技术博客</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <div id="no-downloads">
-        <span class="inner">
-        </span>
-      </div>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h1>
-<a id="ustcdanegithubio" class="anchor" href="#ustcdanegithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a>ustcdane.github.io</h1>
-
-<p>DanielWang的技术博客</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/ustcdane">ustcdane</a> can be found on <a href="https://github.com/ustcdane">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="http://home.ustc.edu.cn/~danewang/" class="navbar-brand large">Wang Dan</a>
     </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+		<li>
+          <a href="http://home.ustc.edu.cn/~danewang/blog/"  target="_blank">Blog</a>
+        </li>
+		<li>
+          <a href="http://home.ustc.edu.cn/~danewang/index_eng.htm"  target="_blank">ENGLISH</a>
+        </li>
+		<!--
+        <li>
+          <a href="http://en.ustc.edu.cn/" target="_blank">University  of Science and Technology of China</a>
+        </li>
+       <li>
+         <a href="http://en.cs.ustc.edu.cn/" target="_blank">School of Computer Science and Technology</a>
+      </li>
+       -->
+      </ul>
 
+    </nav>
+  </div>
+</header>
+
+        <div class="container bs-docs-container">
+            <div class="row">
+                <div class="col-md-3">
+				<div class="bs-sidebar hidden-print affix-top" role="complementary">
+                    <ul class="nav bs-sidenav large">
+						<li class=""><a href="#aboutMe">关于我</a></li>
+						<li class=""><a href="#skills">技术 & 项目</a></li>
+                        <li class=""><a href="#hobbies">爱好</a></li>
+						<li class=""><a href="#myAddr">联系方式</a></li>
+						<li class=""><a href="#humans">招贤纳士</a></li>
+                        <li class=""><a href="#links">链接</a>
+							<ul class="nav">
+								<li class=""><a href="#my_links">我的其它链接</a></li>
+								<li class=""><a href="#other_links">常去的技术博客</a></li>
+							</ul>
+						</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-md-9" role="main">
+                    <div class="row">
+						<blockquote class="pull-right">
+                    		<p class="quoteFont">
+                        	We can only see a short distance ahead, but we can see plenty there that needs to be done.
+                    		</p>
+                        	<small>Alan Turing</small>
+                    	</blockquote>
+					</div>
+					
+					 <section id="aboutMe" class="bottom-space">
+                        <div class="row">
+                    	<p class="large">
+						<br>
+                    	<strong>worker@sogou</strong></br> 
+						2015年硕士研究僧毕业于南七技校、CS专业，初入职场的小白，爱工作，爱学习。
+                    	</p>
+					</div>
+                    </section>
+					
+                    
+                    <section id="skills" class="bottom-space">
+                        <div class="page-header">
+                            <h3>技术 & 项目</h3>
+                        </div>
+                        <ul class="medium">
+                            <li>
+							C/C++, Python, shell, Java 
+							</li>
+							<li>
+							开源爱好者
+							</li>
+							<li> 
+							NLP，ML
+							</li>
+							<li> 
+							技术爱好广泛
+							</li>
+							<li> 
+							希望自己今后能在NLP、网络等领域有所成长
+                            </li>
+                        </ul>
+                    </section>
+
+					
+					<section id="hobbies" class="bottom-space">
+                        <div class="page-header">
+                            <h3>爱好</h3>
+                        </div>
+						<ul class="medium">
+						<li>希望能认识新的朋友，欢迎骚扰 ^_^ </br></li>
+						<li>代码、电影、美剧、乒乓球、羽毛球... 略宅 </li>
+						</ul>
+                    </section>  
+					
+					<section id="myAddr" class="bottom-space">
+                    <div class="page-header">
+                        <h3>联系方式</h3>
+                    </div>
+                    <div class="row">
+             
+                        <div class="col-md-6" align="left">
+                            <address class="large">
+								Email:ZGFuZXVzdGNAZ21haWwuY29t</br>
+							    Tel:MDEwLTU2ODk5OTk5LTM0MTI=</br>
+                                Add:<a href="http://map.sogou.com/u/AHTtog"   target="_blank" >搜狐网络大厦9层</a>,
+								五道口, 北京</br>
+								Weibo: <a href="http://weibo.com/danewang" title="Sina weibo"  target="_blank">@王聃丶</a></br>
+								GitHub：<a href="https://github.com/ustcdane"  title="github"  target="_blank">@ustcdane</a></br>
+								Linkedin <a href="http://www.linkedin.com/pub/daniel-wang/78/61/508"  title="linkedin"  target="_blank">@daniel-wang</a></br>
+								<h5>(Email,Tel需Base64解码)</h5>
+                            </address>
+                        </div>
+                        <div class="col-md-5" align="right">
+                              <img class="img-rounded" src="images/myself.jpg" alt="DanielWang" width="456">
+                        </div>
+                    </div> 
+                    </section>
+
+					  
+					 <section id="humans" class="bottom-space">
+                        <div class="page-header">
+                            <h3>招贤纳士</h3>
+                        </div>
+                        <ul class="large">
+                            <li>
+                                工作职责：
+                                <ul class="medium">
+									<li>
+									搜狗输入法/搜狗号码通用户数据处理及用户行为分析  
+									</li>
+									<li>
+									用户个性化建模及推荐 
+									</li>
+                                </ul>
+                            </li>
+							
+							<li>
+                                工作要求：
+                                <ul class="medium">
+									<li>
+									计算机或相关专业，每周工作时间不少于30h，即将研一/研二学生优先,研三学生如
+能保证工作时长也可考虑  
+									</li>
+									<li>
+									熟悉c/c++编程和算法基础，了解perl或python脚本处理  
+									</li>
+                                    <li>
+                                        善于学习新事物，善于表达和沟通，有较强的分析和解决问题能力，工作有激情  
+                                    </li>
+									 <li>
+                                        有自然语言处理、数据挖掘、机器学习、深度学习项目经历者优先  
+                                    </li>
+									<li>
+									可实习3个月或以上者优先 
+									</li>
+                                </ul>
+                            </li>
+							
+							<li>
+                                工作地点：
+                                <ul class="medium">
+								    <li>
+									搜狗桌面研究部，清华东门搜狐网络大厦，五道口，北京
+									</li>
+                                </ul>
+                            </li>
+							
+							<li>
+                                实习薪酬：
+                                <ul class="medium">
+									<li>
+									每小时25元+实习饭补 
+									</li>
+									<li>
+									实习期间工作表现良好，态度认真负责的同学在毕业时可提供全职工作offer  
+									</li>
+                                </ul>
+                            </li>
+							
+							<li>
+                                简历投递：
+                                <ul class="medium">
+									<li>
+									简历请发送A@B，其中A=research_ime_job，B=sogou-inc.com  
+									</li>
+									<li>
+									邮件标题请注明[瀚海星云]搜狗桌面研究部实习生应聘-$学校-$姓名  
+									</li>
+                                </ul>
+                            </li>
+								<li>
+                                <strong>友情内推：</strong>
+                                <ul class="medium">
+									<li>
+									不限以上职位，如果希望内推可以邮件我  
+									</li>
+                                </ul>
+                            </li>
+							
+                        </ul>
+                    </section>
+  
+					  
+                    <section id="links" class="bottom-space">
+                        <div class="page-header">
+                            <h3>链接</h3>
+                        </div>
+                        <h4 id="my_links" class="customGrey">我的其它链接</h4>
+                         <ul class="medium">
+						  <li>
+							<a href="http://blog.csdn.net/daniel_ustc" title="CSDN blog"  target="_blank">CSDN Blog</a>
+						  </li>
+						 <li> 
+							<a href="http://home.ustc.edu.cn/~danewang/blog/"  title="My new web site.(Blog)"  target="_blank">My Blog</a>
+						 </li>
+						<li> 
+							<a href="http://home.ustc.edu.cn/~danewang/old/" title="My old Homepage"  target="_blank">Home Page</a>
+						</li>
+						<li>   
+							<a href="http://home.ustc.edu.cn/~danewang/download/Resume.pdf" title="Curriculum Vitae"  target="_blank">CV</a>
+						</li>
+					   <li>
+							<a href="http://home.ustc.edu.cn/~danewang/c/" title="Program Design Web" target="_blank">Programming I (Fall 2013) HomePage</a>
+					   </li> 
+					 </ul>
+						
+
+                    <h4 id="other_links" class="customGrey"> 常去的技术博客</h4>
+                    <ul class="large">
+
+					<li>
+					<a href="http://queue.acm.org/blog/" target="_blank">ACM Queue</a>
+					</li>
+
+					<li>
+					<a href="http://www.allthingsdistributed.com/" target="_blank">Werner Vogels</a>
+					</li>
+					<li>
+					 <a href="http://dtrace.org/blogs/brendan/" target="_blank">Brendan Gregg</a>
+					</li>
+					<li>
+					<a href="http://dimitrik.free.fr/blog/index.html" target="_blank">Dimitri KRAVTCHUK</a>
+					</li>
+
+					<li>
+					<a href="http://highscalability.com/" target="_blank">High Scalability</a>
+					</li>
+					<li>
+					<a href="http://mechanical-sympathy.blogspot.com/" target="_blank">Martin Thompson</a>
+					</li>
+					<li>
+					<a href="http://paulmck.livejournal.com/" target="_blank">Paul E. McKenney</a>
+					</li>
+<li>
+					<a href="http://perspectives.mvdirona.com/" target="_blank">James Hamilton</a>
+					</li>
+
+
+			<li>
+			<a href="http://www.catonmat.net/" target="_blank">Peteris Krumins</a>
+			</li>
+
+			<li>
+			 <a href="http://eli.thegreenplace.net/" target="_blank">Eli Bendersky</a>
+			</li>
+			<li>
+			<a href="http://coolshell.cn/" target="_blank">coolshell</a>
+			</li>
+			</ul>
+
+        </section>
+        </div>
+                
+        <hr>
+                
+        <div class="footer">
+        <p class="small">
+	<p>Built with <a href="http://twitter.github.com/bootstrap/">Bootstrap.</a></p>
+                <p>&copy; Dan Wang 2013. Last update: 2013-10-13</p>
+	<IMG align=absMiddle id=IMG2 src="/cgi-bin/Count.cgi?df=danewang.dat&ft=0&tr=N&dd=cd" align="right"> <br>
+
+	  <p class="pull-right"><a href="http://home.ustc.edu.cn/~danewang/">Top</a></p>
+                </p>
+                </div>
+            
+            </div> <!-- /container -->
+        </div>
+
+        <script src="mycss/analytics.js" async=""></script><script src="mycss/jquery.js"></script>
+        <script src="mycss/bootstrap.js"></script>
+				<script src="mycss/holder.js"></script>
+				<script src="mycss/application.js"></script>
+        <script>
+            $(document).ready(function() {
+                // side bar
+                $('.bs-docs-sidenav').affix();
+            });
+        </script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-43843221-1', 'uky.edu');
+			ga('send', 'pageview');
+		</script>
     
-  </body>
-</html>
+
+
+</body></html>
